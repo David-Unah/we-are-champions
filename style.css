@@ -43,9 +43,18 @@ body {
     margin: auto;
 }
 
-#main-input {
+.input-container {
     width: 317px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+#main-input {
+    width: 100%;
     height: 118px;
+    grid-column: 1/3;
     padding: 19px;
     margin-top: 19px;
     border-radius: 8px;
@@ -56,6 +65,24 @@ body {
 #main-input::placeholder {
     position: relative;
     bottom: 35px;
+}
+
+#from-input {
+    width: 100%;
+    height: 33px;
+    padding-left: 12px;
+    border-radius: 8px;
+    color: #FFF;
+    background: #444059;
+}
+
+#to-input {
+    width: 100%;
+    height: 33px;
+    padding-left: 12px;
+    border-radius: 8px;
+    color: #FFF;
+    background: #444059;
 }
 
 #publish-button {
@@ -79,15 +106,9 @@ ul {
 
 ul > li {
     width: 317px;
-    height: 72px;
     margin-bottom: 13px;
     padding: 16px;
     color: #1B1924;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     list-style-type: none;
     background-color: white;
 
@@ -96,4 +117,19 @@ ul > li {
 #noComments {
     background-color: transparent;
     color: white;
+}
+
+.extra-details {
+    color: #1B1924;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#mainComment {
+    color: #1B1924;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 8px 0;
 }

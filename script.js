@@ -31,6 +31,10 @@ publishBtn.addEventListener('click', function() {
 
     if (inputedComment === '') {
         inputValue.style.border = "1px solid red"
+    } else if (fromInputValue === '') {
+        fromInput.style.border = "1px solid red"
+    } else if (toInputValue === '') {
+        toInput.style.border  = "1px solid red"
     } else {
         inputValue.style.border = "1px solid transparent"
         push(commentsInDb, commentDetails)
